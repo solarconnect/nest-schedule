@@ -5,4 +5,5 @@ export interface IScheduleConfig extends ICronJobConfig {
   interval?: number;
   timeout?: number;
   method?: string;
+  tz?: string; // 'Europe/Athens'
 }

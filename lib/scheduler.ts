@@ -80,6 +80,7 @@ export class Scheduler {
         // BUG: Triggered undefined when the params were optional
         end: config ? config.endTime : null,
         rule: cron,
+        tz: config ? config.tz : 'Asia/Seoul'
       },
       async () => {
         const job = this.jobs.get(key);
